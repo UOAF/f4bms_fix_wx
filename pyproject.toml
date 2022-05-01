@@ -1,0 +1,13 @@
+[build-system]
+requires = ["flit_core >=3.2,<4", "numpy >=1.22"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "f4bms_wx_fixer"
+authors = [{name = "Bobby Moretti", email = "bobmoretti@gmail.com"}]
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+
+[project.scripts]
+f4bms_fix_wx = "f4bms_wx_fixer:main"
